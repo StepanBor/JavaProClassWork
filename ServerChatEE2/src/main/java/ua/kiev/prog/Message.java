@@ -5,6 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,11 +13,17 @@ import com.google.gson.GsonBuilder;
 public class Message {
 	private Date date = new Date();
 	private String from;
-	private String to;
+	private List<User> toUsers;
 	private String text;
 
 	public Message(String from, String text) {
 		this.from = from;
+		this.text = text;
+	}
+
+	public Message(String from, List<User> toUsers, String text) {
+		this.from = from;
+		this.toUsers = toUsers;
 		this.text = text;
 	}
 
@@ -33,7 +40,7 @@ public class Message {
 	@Override
 	public String toString() {
 		return new StringBuilder().append("[").append(date)
-				.append(", From: ").append(from).append(", To: ").append(to)
+				.append(", From: ").append(from).append(", To: ").append(toUsers)
 				.append("] ").append(text)
                 .toString();
 	}
@@ -72,12 +79,12 @@ public class Message {
 		this.from = from;
 	}
 
-	public String getTo() {
-		return to;
+	public List<User> getToUsers() {
+		return toUsers;
 	}
 
-	public void setTo(String to) {
-		this.to = to;
+	public void setToUsers(List<User> toUsers) {
+		this.toUsers = toUsers;
 	}
 
 	public String getText() {

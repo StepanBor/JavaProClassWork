@@ -7,6 +7,15 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		try {
+			System.out.println("Create new user (y/n)? ");
+			System.out.println("type y - to create, or n - to login as existing user");
+			String yN=scanner.nextLine();
+			if(yN.equalsIgnoreCase("y")){
+				System.out.println("Enter your login");
+				String login = scanner.nextLine();
+				System.out.println("Enter your password");
+				String password=scanner.nextLine();
+			}
 			System.out.println("Enter your login: ");
 			String login = scanner.nextLine();
 	

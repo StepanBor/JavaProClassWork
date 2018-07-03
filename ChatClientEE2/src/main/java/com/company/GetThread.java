@@ -22,10 +22,12 @@ public class GetThread implements Runnable {
     public void run() {
         try {
             while ( ! Thread.interrupted()) {
-                URL url = new URL(Utils.getURL() + "/get?from=" + n);
+
+                URL url = new URL(Utils.getURL() + "/get?fromIndex=" + n);
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
                 InputStream is = http.getInputStream();
+
                 try {
                     byte[] buf = requestBodyToArray(is);
                     String strBuf = new String(buf, StandardCharsets.UTF_8);

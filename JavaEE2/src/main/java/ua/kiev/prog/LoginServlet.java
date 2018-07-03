@@ -12,8 +12,8 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String password = request.getParameter("password");
 
         if (LOGIN.equals(login) && PASS.equals(password)) {
-            HttpSession session = request.getSession(true);
-            session.setAttribute("user_login", login);
+            HttpSession ses = request.getSession(true);
+            ses.setAttribute("user_login", login);
         }
 
         response.sendRedirect("index.jsp");

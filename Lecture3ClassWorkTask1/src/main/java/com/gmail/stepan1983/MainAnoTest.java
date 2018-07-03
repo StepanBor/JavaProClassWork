@@ -12,10 +12,11 @@ public class MainAnoTest {
             try {
                 Class<?> cls = Class.forName("com.gmail.stepan1983.TestAnotation");
                 Method[] methods=cls.getMethods();
-                MyAno myAno= (MyAno) cls.getAnnotation(MyAno.class);
+
 
                 for (int i = 0; i <methods.length ; i++) {
 
+                    MyAno myAno= (MyAno) methods[i].getAnnotation(MyAno.class);
 
                     if(methods[i].isAnnotationPresent(MyAno.class)){
                         System.out.println(methods[i].invoke(null,myAno.a(),myAno.b()));

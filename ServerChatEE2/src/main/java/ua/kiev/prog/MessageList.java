@@ -1,13 +1,13 @@
 package ua.kiev.prog;
 
-import java.util.LinkedList;
-import java.util.List;
+
+import java.util.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class MessageList {
 	private static final MessageList msgList = new MessageList();
-
+	private final Map<User, List<Message>> userMap=new TreeMap<>();
     private final Gson gson;
 	private final List<Message> list = new LinkedList<>();
 	
@@ -26,5 +26,44 @@ public class MessageList {
 	public synchronized String toJSON(int n) {
 		if (n >= list.size()) return null;
 		return gson.toJson(new JsonMessages(list, n));
+	}
+
+	public synchronized  String userPrivateMessToJSON(User user, int n){
+
+		if(userMap.get(user)!=null){
+			List<Message> tempList=new ArrayList<>();
+			for (int i = n; i < userMap.get(user).size(); i++) {
+				tempList.add(userMap.get(user).get(i));
+			}
+			return  gson.toJson(tempList);
+		}
+
+		return null;
+	}
+
+	public synchronized void addPrivateMess(Message mess, User toUser){
+		List<Message> privateMess=new ArrayList<>();
+		privateMess.add(mess);
+		if(userMap.containsKey(toUser)){
+			List<Message> tempList=userMap.get(toUser);
+			tempList.add(mess);
+			userMap.put(toUser,tempList);
+			return;
+		}
+		userMap.put(toUser,privateMess);
+	}
+
+	public synchronized void addPrivateMess(User toUser){
+		List<Message> privateMess=new ArrayList<>();
+
+		if(userMap.containsKey(toUser)){
+
+			return;
+		}
+		userMap.put(toUser,privateMess);
+	}
+
+	public List<User> getUserList(){
+		return new ArrayList<User>(userMap.keySet());
 	}
 }

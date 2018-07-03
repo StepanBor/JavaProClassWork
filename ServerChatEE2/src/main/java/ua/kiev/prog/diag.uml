@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="106.91250000000001" y="-99.0">ua.kiev.prog.Message</node>
+    <node x="20.412500000000023" y="237.0">ua.kiev.prog.GetListServlet</node>
+    <node x="78.755" y="158.0">ua.kiev.prog.MessageList</node>
+    <node x="0.0" y="79.0">ua.kiev.prog.JsonMessages</node>
+    <node x="154.0" y="79.0">ua.kiev.prog.User</node>
+    <node x="164.03750000000002" y="237.0">ua.kiev.prog.AddServlet</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.kiev.prog.MessageList" target="ua.kiev.prog.Message">
+      <point x="-14.0" y="-14.5" />
+      <point x="120.755" y="133.0" />
+      <point x="132.5" y="133.0" />
+      <point x="132.5" y="59.0" />
+      <point x="130.91250000000002" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.AddServlet" target="ua.kiev.prog.MessageList">
+      <point x="0.0" y="-14.5" />
+      <point x="216.53750000000002" y="207.0" />
+      <point x="176.755" y="207.0" />
+      <point x="42.0" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.MessageList" target="ua.kiev.prog.JsonMessages">
+      <point x="-42.0" y="-14.5" />
+      <point x="92.755" y="133.0" />
+      <point x="61.0" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.MessageList" target="ua.kiev.prog.User">
+      <point x="42.0" y="-14.5" />
+      <point x="176.755" y="133.0" />
+      <point x="189.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.JsonMessages" target="ua.kiev.prog.Message">
+      <point x="30.5" y="-14.5" />
+      <point x="91.5" y="59.0" />
+      <point x="112.1125" y="59.0" />
+      <point x="-18.80000000000001" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.AddServlet" target="ua.kiev.prog.Message">
+      <point x="35.0" y="-14.5" />
+      <point x="251.53750000000002" y="217.0" />
+      <point x="241.4925" y="217.0" />
+      <point x="241.4925" y="59.0" />
+      <point x="168.5125" y="59.0" />
+      <point x="37.599999999999994" y="14.5" />
+    </edge>
+    <edge source="ua.kiev.prog.GetListServlet" target="ua.kiev.prog.MessageList">
+      <point x="-29.75" y="-14.5" />
+      <point x="50.16250000000002" y="217.0" />
+      <point x="92.755" y="217.0" />
+      <point x="-42.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>ua.kiev.prog.Message</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

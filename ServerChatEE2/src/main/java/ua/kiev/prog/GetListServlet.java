@@ -16,11 +16,13 @@ public class GetListServlet extends HttpServlet {
 
     @Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		String fromStr = req.getParameter("from");
-		int from = 0;
+		String fromIndexSting = req.getParameter("fromIndex");
+		String fromIndexPrivate=req.getParameter("indexPrivate");
+		String fromUser=req.getParameter("fromUser");
+		int fromIndex = 0;
 		try {
-			from = Integer.parseInt(fromStr);
-			if (from < 0) from = 0;
+			fromIndex = Integer.parseInt(fromIndexSting);
+			if (fromIndex < 0) fromIndex = 0;
 		} catch (Exception ex) {
 			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
@@ -28,7 +30,8 @@ public class GetListServlet extends HttpServlet {
 
 		resp.setContentType("application/json");
 		
-		String json = msgList.toJSON(from);
+		String json = msgList.toJSON(fromIndex);
+
 		if (json != null) {
 			OutputStream os = resp.getOutputStream();
             byte[] buf = json.getBytes(StandardCharsets.UTF_8);

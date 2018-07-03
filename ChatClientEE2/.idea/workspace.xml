@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f37a256d-4a71-4d50-bcae-0e10065f3e40" name="Default" comment="" />
+    <list default="true" id="646fd2d3-4907-4527-ad89-5c694baadc35" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,21 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-=======
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -34,97 +30,46 @@
       <file leaf-file-name="GetThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="255">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-=======
-            <state relative-caret-position="510">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="8" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonMessages.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonMessages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="187">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-              <folding>
-                <element signature="method#toString#0;class#Message#0" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-=======
-            <state relative-caret-position="357">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/prog/GetThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/GetThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/MyAno.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/TestAnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/MainAnoTest.java" />
       </list>
     </option>
   </component>
@@ -141,26 +86,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ChatClientEE2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ChatClientEE2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -171,10 +100,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
       <pane id="Scope" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,28 +136,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ChatClientEE2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatClientEE2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-=======
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaPro/Lecture2Task1" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServerChatEE2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -246,13 +168,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="ChatClientEE2" />
+    <configuration name="MainAnoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gmail.stepan1983.MainAnoTest" />
+      <module name="Lecture3ClassWorkTask1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.gmail.stepan1983.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -300,7 +222,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainAnoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -309,78 +231,51 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f37a256d-4a71-4d50-bcae-0e10065f3e40" name="Default" comment="" />
-      <created>1530111169340</created>
+      <changelist id="646fd2d3-4907-4527-ad89-5c694baadc35" name="Default" comment="" />
+      <created>1530120862988</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1530111169340</updated>
-<<<<<<< HEAD
-      <workItem from="1530111173066" duration="443000" />
-      <workItem from="1530595528574" duration="8962000" />
-=======
-      <workItem from="1530111173066" duration="275000" />
-      <workItem from="1530115275200" duration="2010000" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+      <updated>1530120862988</updated>
+      <workItem from="1530120865820" duration="1752000" />
+      <workItem from="1530630327748" duration="63000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="9405000" />
+    <option name="totallyTimeSpent" value="1815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="2285000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33405876" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
-=======
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32975295" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18098818" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-<<<<<<< HEAD
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-=======
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32979977" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,131 +286,39 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="544">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-=======
-        <state relative-caret-position="399">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="374">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-=======
-        <state relative-caret-position="462">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-<<<<<<< HEAD
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-=======
-            <element signature="imports" expanded="true" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="544">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/TestAnotation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/MyAno.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/MainAnoTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="399">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-=======
-        <state relative-caret-position="510">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="255">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-          <folding>
-            <element signature="method#toString#0;class#Message#0" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-=======
-        <state>
-          <caret column="20" selection-start-column="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> 2e5753e966ee5f1802f7c1b009629840427ba44d
-          </folding>
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
         </state>
       </provider>
     </entry>

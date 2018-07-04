@@ -34,11 +34,10 @@ public class AddUser extends HttpServlet {
 
 
             if (us != null) {
-                System.out.println("HHHHHHHHHHHHHH");
-                if(msgList.getUserMap().isEmpty()){
+                    System.out.println("HHHHHHHHHHHHHH");
                     msgList.addPrivateMess(us);
                     resp.setStatus(HttpServletResponse.SC_OK);
-                }
+                    return;
 
 //                resp.setContentType("application/json");
 //
@@ -54,6 +53,18 @@ public class AddUser extends HttpServlet {
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             }
 
+        }else {
+            byte[] buf = requestBodyToArray(req);
+            String bufStr = new String(buf, StandardCharsets.UTF_8);
+            User us = User.fromJSON(bufStr);
+
+            if ((us != null & !msgList.getUserMap().isEmpty()) && msgList.getUserMap().containsKey(us)) {
+                System.out.println("loginNNNNNNNNN");
+                resp.setStatus(HttpServletResponse.SC_OK);
+                return;
+            } else {
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            }
         }
 
     }

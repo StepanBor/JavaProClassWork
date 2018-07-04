@@ -7,7 +7,7 @@ import com.google.gson.GsonBuilder;
 
 public class MessageList {
 	private static final MessageList msgList = new MessageList();
-	private  Map<User, List<Message>> userMap=new TreeMap<>();
+	private  Map<User, List<Message>> userMap=new HashMap<>();
     private  Gson gson;
 	private  List<Message> list = new LinkedList<>();
 	
@@ -44,6 +44,7 @@ public class MessageList {
 	public synchronized void addPrivateMess(Message mess, User toUser){
 		List<Message> privateMess=new ArrayList<>();
 		privateMess.add(mess);
+
 		if(userMap.containsKey(toUser)){
 			List<Message> tempList=userMap.get(toUser);
 			tempList.add(mess);
@@ -55,6 +56,11 @@ public class MessageList {
 
 	public synchronized void addPrivateMess(User toUser){
 		List<Message> privateMess=new ArrayList<>();
+
+		if(userMap.isEmpty()){
+			userMap.put(toUser,privateMess);
+			return;
+		}
 
 		if(userMap.containsKey(toUser)){
 

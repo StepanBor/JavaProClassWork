@@ -55,7 +55,7 @@ public class Main {
 					String password=scanner.nextLine();
 					user=new User(login,password);
 					user.setOnline(true);
-					int res = user.send(Utils.getURL() + "/addUser","false");
+					int res = user.send(Utils.getURL(),"false");
 
 					if (res != 200) { // 200 OK
 						System.out.println("Wrong user name or password: " + res);
@@ -82,6 +82,9 @@ public class Main {
 				System.out.println("Enter your message: ");
 				String text = scanner.nextLine();
 				if (text.isEmpty()) break;
+
+				System.out.println("Enter users names to whom you want send message");
+				System.out.println("Separate user names with \",(coma)\" or press ENTER to send mess to all users");
 
 				Message m = new Message(user, text);
 				int res = m.send(Utils.getURL() + "/add");
@@ -113,5 +116,9 @@ public class Main {
 		User[] userArr=gson.fromJson(listJson,User[].class);
 		List<User> userList=new ArrayList<>(Arrays.asList(userArr));
 		return userList;
+	}
+
+	public static void privateMessage(){
+
 	}
 }

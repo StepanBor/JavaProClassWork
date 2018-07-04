@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package com.company;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -10,7 +10,6 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class User {
-
     String login;
     String password;
 

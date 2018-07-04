@@ -1,6 +1,9 @@
 package com.company;
 
+import javax.jws.soap.SOAPBinding;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +18,20 @@ public class Main {
 				String login = scanner.nextLine();
 				System.out.println("Enter your password");
 				String password=scanner.nextLine();
+				User user=new User(login,password);
+				int res = user.send(Utils.getURL() + "/add");
+
+				if (res != 200) { // 200 OK
+					System.out.println("HTTP error occured: " + res);
+					return;
+				}
+//				String postParam="login="+login+"&password"
+////				URL url=new URL(Utils.getURL()+"/add");
+////				HttpURLConnection conect= (HttpURLConnection) url.openConnection();
+////
+////				conect.setRequestMethod("POST");
+////				conect.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+////				conect.setRequestProperty( "charset", "utf-8");
 			}
 			System.out.println("Enter your login: ");
 			String login = scanner.nextLine();

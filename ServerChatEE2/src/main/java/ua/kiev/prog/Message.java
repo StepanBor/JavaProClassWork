@@ -12,17 +12,17 @@ import com.google.gson.GsonBuilder;
 
 public class Message {
 	private Date date = new Date();
-	private String from;
+	private User fromUser;
 	private List<User> toUsers;
 	private String text;
 
-	public Message(String from, String text) {
-		this.from = from;
+	public Message(User fromUser, String text) {
+		this.fromUser = fromUser;
 		this.text = text;
 	}
 
-	public Message(String from, List<User> toUsers, String text) {
-		this.from = from;
+	public Message(User fromUser, List<User> toUsers, String text) {
+		this.fromUser = fromUser;
 		this.toUsers = toUsers;
 		this.text = text;
 	}
@@ -31,28 +31,21 @@ public class Message {
 		Gson gson = new GsonBuilder().create();
 		return gson.toJson(this);
 	}
-	
+
 	public static Message fromJSON(String s) {
 		Gson gson = new GsonBuilder().create();
 		return gson.fromJson(s, Message.class);
 	}
-	
-	@Override
-	public String toString() {
-		return new StringBuilder().append("[").append(date)
-				.append(", From: ").append(from).append(", To: ").append(toUsers)
-				.append("] ").append(text)
-                .toString();
-	}
+
+
 
 	public int send(String url) throws IOException {
 		URL obj = new URL(url);
-		HttpURLConnection conn = (HttpURLConnection)
-				obj.openConnection();
-		
+		HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
+
 		conn.setRequestMethod("POST");
 		conn.setDoOutput(true);
-	
+
 		OutputStream os = conn.getOutputStream();
 		try {
 			String json = toJSON();
@@ -62,7 +55,7 @@ public class Message {
 			os.close();
 		}
 	}
-	
+
 	public Date getDate() {
 		return date;
 	}
@@ -71,12 +64,12 @@ public class Message {
 		this.date = date;
 	}
 
-	public String getFrom() {
-		return from;
+	public User getFromUser() {
+		return fromUser;
 	}
 
-	public void setFrom(String from) {
-		this.from = from;
+	public void setFromUser(User fromUser) {
+		this.fromUser = fromUser;
 	}
 
 	public List<User> getToUsers() {
@@ -93,5 +86,15 @@ public class Message {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	@Override
+	public String toString() {
+		return "Message{" +
+				"date=" + date +
+				", fromUser='" + fromUser + '\'' +
+				", toUsers=" + toUsers +
+				", text='" + text + '\'' +
+				'}';
 	}
 }

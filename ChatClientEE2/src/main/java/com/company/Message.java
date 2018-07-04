@@ -9,15 +9,22 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import java.util.List;
 
 public class Message {
 	private Date date = new Date();
-	private String from;
-	private String to;
+	private User fromUser;
+	private List<User> toUsers;
 	private String text;
 
-	public Message(String from, String text) {
-		this.from = from;
+	public Message(User fromUser, String text) {
+		this.fromUser = fromUser;
+		this.text = text;
+	}
+
+	public Message(User fromUser, List<User> toUsers, String text) {
+		this.fromUser = fromUser;
+		this.toUsers = toUsers;
 		this.text = text;
 	}
 
@@ -31,13 +38,7 @@ public class Message {
 		return gson.fromJson(s, Message.class);
 	}
 	
-	@Override
-	public String toString() {
-		return new StringBuilder().append("[").append(date)
-				.append(", From: ").append(from).append(", To: ").append(to)
-				.append("] ").append(text)
-                .toString();
-	}
+
 
 	public int send(String url) throws IOException {
 		URL obj = new URL(url);
@@ -55,7 +56,7 @@ public class Message {
 			os.close();
 		}
 	}
-	
+
 	public Date getDate() {
 		return date;
 	}
@@ -64,20 +65,20 @@ public class Message {
 		this.date = date;
 	}
 
-	public String getFrom() {
-		return from;
+	public User getFromUser() {
+		return fromUser;
 	}
 
-	public void setFrom(String from) {
-		this.from = from;
+	public void setFromUser(User fromUser) {
+		this.fromUser = fromUser;
 	}
 
-	public String getTo() {
-		return to;
+	public List<User> getToUsers() {
+		return toUsers;
 	}
 
-	public void setTo(String to) {
-		this.to = to;
+	public void setToUsers(List<User> toUsers) {
+		this.toUsers = toUsers;
 	}
 
 	public String getText() {
@@ -86,5 +87,15 @@ public class Message {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	@Override
+	public String toString() {
+		return "Message{" +
+				"date=" + date +
+				", fromUser='" + fromUser + '\'' +
+				", toUsers=" + toUsers +
+				", text='" + text + '\'' +
+				'}';
 	}
 }

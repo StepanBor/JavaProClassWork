@@ -7,9 +7,9 @@ import com.google.gson.GsonBuilder;
 
 public class MessageList {
 	private static final MessageList msgList = new MessageList();
-	private final Map<User, List<Message>> userMap=new TreeMap<>();
-    private final Gson gson;
-	private final List<Message> list = new LinkedList<>();
+	private  Map<User, List<Message>> userMap=new TreeMap<>();
+    private  Gson gson;
+	private  List<Message> list = new LinkedList<>();
 	
 	public static MessageList getInstance() {
 		return msgList;
@@ -65,5 +65,9 @@ public class MessageList {
 
 	public List<User> getUserList(){
 		return new ArrayList<User>(userMap.keySet());
+	}
+
+	public Map<User, List<Message>> getUserMap() {
+		return userMap;
 	}
 }

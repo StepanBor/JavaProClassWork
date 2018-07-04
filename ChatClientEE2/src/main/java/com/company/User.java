@@ -8,10 +8,12 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 public class User {
-    String login;
-    String password;
+   private String login;
+   private String password;
+   private boolean online;
 
     public User(String login, String password) {
         this.login = login;
@@ -47,14 +49,37 @@ public class User {
         return gson.fromJson(s, User.class);
     }
 
-    public int send(String url) throws IOException {
-        URL obj = new URL(url);
-        HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
+    public boolean isOnline() {
+        return online;
+    }
 
+    public void setOnline(boolean online) {
+        this.online = online;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return Objects.equals(getLogin(), user.getLogin()) &&
+                Objects.equals(getPassword(), user.getPassword());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getLogin(), getPassword());
+    }
+
+    public int send(String url, String addUser) throws IOException {
+        URL obj = new URL(url+"/addUser");
+        HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
         conn.setRequestMethod("POST");
         conn.setDoOutput(true);
-
+        conn.setRequestProperty("addUser",addUser);
         OutputStream os = conn.getOutputStream();
+
         try {
             String json = toJSON();
             os.write(json.getBytes(StandardCharsets.UTF_8));
@@ -62,5 +87,13 @@ public class User {
         } finally {
             os.close();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", online=" + online +
+                '}';
     }
 }

@@ -20,18 +20,22 @@ public class GetListServlet extends HttpServlet {
 		String fromIndexPrivate=req.getParameter("indexPrivate");
 		String fromUser=req.getParameter("fromUser");
 		int fromIndex = 0;
+		int fromIndexPrivateInt=0;
+		int fromUserInt=0;
 		try {
 			fromIndex = Integer.parseInt(fromIndexSting);
+			fromIndexPrivateInt = Integer.parseInt(fromIndexPrivate);
+			fromUserInt = Integer.parseInt(fromUser);
 			if (fromIndex < 0) fromIndex = 0;
+			if (fromIndexPrivateInt < 0) fromIndex = 0;
 		} catch (Exception ex) {
 			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
 		}
 
 		resp.setContentType("application/json");
-		
 		String json = msgList.toJSON(fromIndex);
-
+		String jsonPrivate=msgList.userPrivateMessToJSON(fromUserInt,fromIndexPrivateInt);
 		if (json != null) {
 			OutputStream os = resp.getOutputStream();
             byte[] buf = json.getBytes(StandardCharsets.UTF_8);

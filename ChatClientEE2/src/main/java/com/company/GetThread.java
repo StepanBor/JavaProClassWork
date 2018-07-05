@@ -13,9 +13,14 @@ import java.nio.charset.StandardCharsets;
 public class GetThread implements Runnable {
     private final Gson gson;
     private int n;
+    private int privMessCount;
+    private User currentUser;
 
-    public GetThread() {
+
+
+    public GetThread( User currentUser) {
         gson = new GsonBuilder().create();
+        this.currentUser =currentUser;
     }
 
     @Override
@@ -23,7 +28,7 @@ public class GetThread implements Runnable {
         try {
             while ( ! Thread.interrupted()) {
 
-                URL url = new URL(Utils.getURL() + "/get?fromIndex=" + n);
+                URL url = new URL(Utils.getURL() + "/get?fromIndex=" + n +"&indexPrivate="+privMessCount+"&fromUser="+ currentUser.hashCode());
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
                 InputStream is = http.getInputStream();

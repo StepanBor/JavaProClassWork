@@ -25,16 +25,16 @@ public class AddUser extends HttpServlet {
             String bufStr = new String(buf, StandardCharsets.UTF_8);
 //            System.out.println(bufStr+"!!!!!!!!!!!!!!!!");
             User us = User.fromJSON(bufStr);
-            System.out.println((us != null));
-
-            System.out.println(us+"!!!!!!!!!!!!!!!!");
-            System.out.println(msgList.getUserMap().isEmpty());
+//            System.out.println((us != null));
+//
+//            System.out.println(us+"!!!!!!!!!!!!!!!!");
+//            System.out.println(msgList.getUserMap().isEmpty());
 
 //            check and set status if not equals in user map
 
 
             if (us != null) {
-                    System.out.println("HHHHHHHHHHHHHH");
+//                    System.out.println("HHHHHHHHHHHHHH");
                     msgList.addPrivateMess(us);
                     resp.setStatus(HttpServletResponse.SC_OK);
                     return;
@@ -59,7 +59,7 @@ public class AddUser extends HttpServlet {
             User us = User.fromJSON(bufStr);
 
             if ((us != null & !msgList.getUserMap().isEmpty()) && msgList.getUserMap().containsKey(us)) {
-                System.out.println("loginNNNNNNNNN");
+//                System.out.println("loginNNNNNNNNN");
                 resp.setStatus(HttpServletResponse.SC_OK);
                 return;
             } else {

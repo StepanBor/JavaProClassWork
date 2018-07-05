@@ -9,6 +9,9 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class GetThread implements Runnable {
     private final Gson gson;
@@ -17,18 +20,17 @@ public class GetThread implements Runnable {
     private User currentUser;
 
 
-
-    public GetThread( User currentUser) {
+    public GetThread(User currentUser) {
         gson = new GsonBuilder().create();
-        this.currentUser =currentUser;
+        this.currentUser = currentUser;
     }
 
     @Override
     public void run() {
         try {
-            while ( ! Thread.interrupted()) {
+            while (!Thread.interrupted()) {
 
-                URL url = new URL(Utils.getURL() + "/get?fromIndex=" + n +"&indexPrivate="+privMessCount+"&fromUser="+ currentUser.hashCode());
+                URL url = new URL(Utils.getURL() + "/get?fromIndex=" + n + "&indexPrivate=" + privMessCount + "&fromUser=" + currentUser.hashCode());
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
                 InputStream is = http.getInputStream();
@@ -36,14 +38,30 @@ public class GetThread implements Runnable {
                 try {
                     byte[] buf = requestBodyToArray(is);
                     String strBuf = new String(buf, StandardCharsets.UTF_8);
+//                    System.out.println(strBuf);
+                    String[] messList = strBuf.split("kkk");
+//                    System.out.println(messList[0]+messList[1]);
+                    JsonMessages list = gson.fromJson(messList[0], JsonMessages.class);
+                    if(messList[1]!=null){
+//                        System.out.println(messList[1]+"aaaaa");
+                    }
+                    Message[] privateMessArr = gson.fromJson(messList[1], Message[].class);
 
-                    JsonMessages list = gson.fromJson(strBuf, JsonMessages.class);
+
                     if (list != null) {
                         for (Message m : list.getList()) {
                             System.out.println(m);
                             n++;
                         }
                     }
+                    if (privateMessArr != null) {
+
+                        for (Message m : privateMessArr) {
+                            System.out.println(m);
+                            privMessCount++;
+                        }
+                    }
+
                 } finally {
                     is.close();
                 }

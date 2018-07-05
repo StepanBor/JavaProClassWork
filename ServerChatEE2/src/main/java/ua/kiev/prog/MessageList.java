@@ -59,9 +59,11 @@ public class MessageList {
             List<Message> tempList = userMap.get(toUser);
             tempList.add(mess);
             userMap.put(toUser, tempList);
+//            System.out.println(userMap+"from add private mess");
             return;
         }
         userMap.put(toUser, privateMess);
+//        System.out.println(userMap+"from add private mess");
     }
 
     public synchronized void addPrivateMess(User toUser) {
@@ -77,6 +79,7 @@ public class MessageList {
             return;
         }
         userMap.put(toUser, privateMess);
+//        System.out.println(userMap+"from add user");
     }
 
     public synchronized List<User> getUserList() {

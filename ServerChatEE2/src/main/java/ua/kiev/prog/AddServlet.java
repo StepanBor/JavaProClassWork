@@ -19,6 +19,14 @@ public class AddServlet extends HttpServlet {
         String bufStr = new String(buf, StandardCharsets.UTF_8);
 
 		Message msg = Message.fromJSON(bufStr);
+
+		if(msg!=null && msg.getToUsers()!=null){
+            for (User us :msg.getToUsers()) {
+                msgList.addPrivateMess(msg,us);
+            }
+            return;
+        }
+
 		if (msg != null)
 			msgList.add(msg);
 		else

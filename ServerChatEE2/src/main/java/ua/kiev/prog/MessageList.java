@@ -2,78 +2,88 @@ package ua.kiev.prog;
 
 
 import java.util.*;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class MessageList {
-	private static final MessageList msgList = new MessageList();
-	private  Map<User, List<Message>> userMap=new HashMap<>();
-    private  Gson gson;
-	private  List<Message> list = new LinkedList<>();
-	
-	public static MessageList getInstance() {
-		return msgList;
-	}
-  
-  	private MessageList() {
-		gson = new GsonBuilder().create();
-	}
-	
-	public synchronized void add(Message m) {
-		list.add(m);
-	}
-	
-	public synchronized String toJSON(int n) {
-		if (n >= list.size()) return null;
-		return gson.toJson(new JsonMessages(list, n));
-	}
+    private static final MessageList msgList = new MessageList();
+    private Map<User, List<Message>> userMap = new HashMap<>();
+    private Gson gson;
+    private List<Message> list = new LinkedList<>();
 
-	public synchronized  String userPrivateMessToJSON(User user, int n){
+    public static MessageList getInstance() {
+        return msgList;
+    }
 
-		if(userMap.get(user)!=null){
-			List<Message> tempList=new ArrayList<>();
-			for (int i = n; i < userMap.get(user).size(); i++) {
-				tempList.add(userMap.get(user).get(i));
-			}
-			return  gson.toJson(tempList);
-		}
+    private MessageList() {
+        gson = new GsonBuilder().create();
+    }
 
-		return null;
-	}
+    public synchronized void add(Message m) {
+        list.add(m);
+    }
 
-	public synchronized void addPrivateMess(Message mess, User toUser){
-		List<Message> privateMess=new ArrayList<>();
-		privateMess.add(mess);
+    public synchronized String toJSON(int n) {
+        if (n >= list.size()) return null;
+        return gson.toJson(new JsonMessages(list, n));
+    }
 
-		if(userMap.containsKey(toUser)){
-			List<Message> tempList=userMap.get(toUser);
-			tempList.add(mess);
-			userMap.put(toUser,tempList);
-			return;
-		}
-		userMap.put(toUser,privateMess);
-	}
+    public synchronized String userPrivateMessToJSON(int userHash, int n) {
+        User user = new User();
+        Set<User> keySet = userMap.keySet();
 
-	public synchronized void addPrivateMess(User toUser){
-		List<Message> privateMess=new ArrayList<>();
+        for (User us : keySet) {
+            if (us.hashCode() == userHash) {
+                user = us;
+            }
+        }
 
-		if(userMap.isEmpty()){
-			userMap.put(toUser,privateMess);
-			return;
-		}
+        if (userMap.containsKey(user) && userMap.get(user) != null) {
+            List<Message> tempList = new ArrayList<>();
+            for (int i = n; i < userMap.get(user).size(); i++) {
+                tempList.add(userMap.get(user).get(i));
+            }
+            return gson.toJson(tempList);
+        }
 
-		if(userMap.containsKey(toUser)){
+        return null;
+    }
 
-			return;
-		}
-		userMap.put(toUser,privateMess);
-	}
+    public synchronized void addPrivateMess(Message mess, User toUser) {
 
-	public List<User> getUserList(){
-		return new ArrayList<User>(userMap.keySet());
-	}
+        List<Message> privateMess = new ArrayList<>();
+        privateMess.add(mess);
 
-	public Map<User, List<Message>> getUserMap() {
-		return userMap;
-	}
+        if (userMap.containsKey(toUser)) {
+            List<Message> tempList = userMap.get(toUser);
+            tempList.add(mess);
+            userMap.put(toUser, tempList);
+            return;
+        }
+        userMap.put(toUser, privateMess);
+    }
+
+    public synchronized void addPrivateMess(User toUser) {
+        List<Message> privateMess = new ArrayList<>();
+
+        if (userMap.isEmpty()) {
+            userMap.put(toUser, privateMess);
+            return;
+        }
+
+        if (userMap.containsKey(toUser)) {
+
+            return;
+        }
+        userMap.put(toUser, privateMess);
+    }
+
+    public synchronized List<User> getUserList() {
+        return new ArrayList<User>(userMap.keySet());
+    }
+
+    public synchronized Map<User, List<Message>> getUserMap() {
+        return userMap;
+    }
 }

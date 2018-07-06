@@ -91,10 +91,18 @@ public class Message {
 
 	@Override
 	public String toString() {
+		String tempStr="all";
+		if(toUsers!=null){
+			tempStr="";
+			for (User us:toUsers) {
+				tempStr=tempStr+us.getLogin()+", ";
+			}
+		}
+
 		return "Message{" +
 				"date=" + date +
 				", fromUser='" + fromUser + '\'' +
-				", toUsers=" + toUsers +
+				", toUsers=" + tempStr +
 				", text='" + text + '\'' +
 				'}';
 	}

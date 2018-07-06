@@ -6,14 +6,15 @@ import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 public class User {
-   private String login;
-   private String password;
-   private boolean online;
+    private String login;
+    private String password;
+    private boolean online;
 
     public User(String login, String password) {
         this.login = login;
@@ -53,8 +54,17 @@ public class User {
         return online;
     }
 
-    public void setOnline(boolean online) {
+    public void setOnline(String urlst,boolean online) throws IOException {
         this.online = online;
+        URL url = new URL(urlst + "/add?isOnline=" + online + "&userHashCode=" + this.hashCode());
+        HttpURLConnection http = (HttpURLConnection) url.openConnection();
+        int a=http.getResponseCode();
+//        System.out.println(http.getResponseCode()+http.getResponseMessage());
+    }
+
+    public void setOnline(boolean online){
+        this.online = online;
+
     }
 
     @Override
@@ -96,4 +106,6 @@ public class User {
                 ", online=" + online +
                 '}';
     }
+
+
 }

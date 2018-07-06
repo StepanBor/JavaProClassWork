@@ -39,7 +39,7 @@ public class GetListServlet extends HttpServlet {
 		String json = msgList.toJSON(fromIndex)+"kkk"
 				+msgList.userPrivateMessToJSON(fromUserInt,fromIndexPrivateInt);
 //		String jsonPrivate=msgList.userPrivateMessToJSON(fromUserInt,fromIndexPrivateInt);
-		System.out.println(json+"WWWWWWWWWWWWWWWW");
+//		System.out.println(json+"WWWWWWWWWWWWWWWW");
 		if (json != null) {
 			OutputStream os = resp.getOutputStream();
             byte[] buf = json.getBytes(StandardCharsets.UTF_8);

@@ -11,7 +11,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 public class User {
-
     private String login;
     private String password;
     private boolean online;
@@ -54,8 +53,15 @@ public class User {
         return online;
     }
 
-    public void setOnline(boolean online) {
+    public void setOnline(String urlst,boolean online) throws IOException {
         this.online = online;
+        URL url = new URL(urlst + "/add?isOnline=" + online + "&userHashCode=" + this.hashCode());
+        HttpURLConnection http = (HttpURLConnection) url.openConnection();
+    }
+
+    public void setOnline(boolean online){
+        this.online = online;
+
     }
 
     @Override
@@ -97,4 +103,6 @@ public class User {
                 ", online=" + online +
                 '}';
     }
+
+
 }

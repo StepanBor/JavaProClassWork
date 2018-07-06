@@ -20,35 +20,21 @@ public class AddUser extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         if (req.getHeader("addUser").equals("true")) {
-//            System.out.println(req.getHeader("addUser").equals("true"));
+
             byte[] buf = requestBodyToArray(req);
             String bufStr = new String(buf, StandardCharsets.UTF_8);
-//            System.out.println(bufStr+"!!!!!!!!!!!!!!!!");
-            User us = User.fromJSON(bufStr);
-//            System.out.println((us != null));
-//
-//            System.out.println(us+"!!!!!!!!!!!!!!!!");
-//            System.out.println(msgList.getUserMap().isEmpty());
 
-//            check and set status if not equals in user map
+            User us = User.fromJSON(bufStr);
+
 
 
             if (us != null) {
-//                    System.out.println("HHHHHHHHHHHHHH");
+
                     msgList.addPrivateMess(us);
                     resp.setStatus(HttpServletResponse.SC_OK);
                     return;
 
-//                resp.setContentType("application/json");
-//
-//                Gson gson=new GsonBuilder().create();
-//
-//                String jsonUserList = gson.toJson(msgList.getUserList());
-//
-//                if (jsonUserList != null) {
-//                    PrintWriter pw = resp.getWriter();
-//                    pw.print(jsonUserList);
-//                }
+
             } else {
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             }
@@ -59,7 +45,7 @@ public class AddUser extends HttpServlet {
             User us = User.fromJSON(bufStr);
 
             if ((us != null & !msgList.getUserMap().isEmpty()) && msgList.getUserMap().containsKey(us)) {
-//                System.out.println("loginNNNNNNNNN");
+
                 resp.setStatus(HttpServletResponse.SC_OK);
                 return;
             } else {
@@ -78,9 +64,11 @@ public class AddUser extends HttpServlet {
         String json = gson.toJson(msgList.getUserList());
 
 
-        OutputStream os = resp.getOutputStream();
-        byte[] buf = json.getBytes(StandardCharsets.UTF_8);
-        os.write(buf);
+       try(OutputStream os = resp.getOutputStream()) {
+           byte[] buf = json.getBytes(StandardCharsets.UTF_8);
+           os.write(buf);
+       }
+
 
         //PrintWriter pw = resp.getWriter();
         //pw.print(json);

@@ -11,6 +11,7 @@ public class MessageList {
     private Map<User, List<Message>> userMap = new HashMap<>();
     private Gson gson;
     private List<Message> list = new LinkedList<>();
+    private Map<String,Set<User>> chatRoomMap=new TreeMap<>();
 
     public static MessageList getInstance() {
         return msgList;
@@ -89,4 +90,52 @@ public class MessageList {
     public synchronized Map<User, List<Message>> getUserMap() {
         return userMap;
     }
+
+    public synchronized void setUserIsOnline(boolean isOnline, int userHashCode){
+
+        Set<User> userSet=userMap.keySet();
+
+        for (User us: userSet) {
+            System.out.println(us.hashCode()==userHashCode);
+            if(us.hashCode()==userHashCode){
+                us.setOnline(isOnline);
+            }
+        }
+    }
+
+    public synchronized void addChatRoom (String roomName, List<User> userList){
+
+        Set<User> tempSet=new HashSet<>(userList);
+        if (!chatRoomMap.isEmpty()&&chatRoomMap.containsKey(roomName)){
+            return;
+        }
+        chatRoomMap.put(roomName,tempSet);
+
+    }
+
+    public synchronized void addUserToChatRoom(String roomName, List<User> users){
+
+        if(chatRoomMap.containsKey(roomName)){
+            chatRoomMap.get(roomName).addAll(users);
+        }
+
+    }
+
+    public synchronized void removeFromChatRoom(String roomName, List<User> users){
+
+        if(chatRoomMap.containsKey(roomName)){
+            chatRoomMap.get(roomName).removeAll(users);
+        }
+
+    }
+    
+    public synchronized List<ChatRoom> getChatRoomList(){
+        List<ChatRoom> chatRoomList=new ArrayList<>();
+        Set<String> keySet=chatRoomMap.keySet();
+        for (String roomName: keySet) {
+            List<Set<User>>
+            chatRoomList.add(new ChatRoom(roomName,chatRoomMap.get(roomName)))
+        }
+    }
+
 }

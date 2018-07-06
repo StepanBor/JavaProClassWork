@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -33,7 +34,18 @@ public class AddServlet extends HttpServlet {
 			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 	}
 
-	private byte[] requestBodyToArray(HttpServletRequest req) throws IOException {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String isOnlineString=req.getParameter("isOnline");
+        String hashString=req.getParameter("userHashCode");
+        int userHashCode=Integer.parseInt(hashString);
+        boolean isOnline=Boolean.parseBoolean(isOnlineString);
+//        System.out.println(userHashCode+"   "+isOnline+"!!!!!!!!!!!!!!!!");
+        msgList.setUserIsOnline(isOnline,userHashCode);
+
+    }
+
+    private byte[] requestBodyToArray(HttpServletRequest req) throws IOException {
         InputStream is = req.getInputStream();
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         byte[] buf = new byte[10240];

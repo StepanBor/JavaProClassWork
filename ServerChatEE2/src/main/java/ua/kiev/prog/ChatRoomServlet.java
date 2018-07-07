@@ -2,7 +2,6 @@ package ua.kiev.prog;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,17 +38,12 @@ public class ChatRoomServlet extends HttpServlet {
                 msgList.removeFromChatRoom(stringArr[0],Arrays.asList(users));
                 break;
         }
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Gson gson = new GsonBuilder().create();
-
         response.setContentType("application/json");
-
-        String json = gson.toJson(msgList.getUserList());
-
-
+        String json = gson.toJson(msgList.getChatRoomList());
         try(OutputStream os = response.getOutputStream()) {
             byte[] buf = json.getBytes(StandardCharsets.UTF_8);
             os.write(buf);
@@ -61,12 +55,10 @@ public class ChatRoomServlet extends HttpServlet {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         byte[] buf = new byte[10240];
         int r;
-
         do {
             r = is.read(buf);
             if (r > 0) bos.write(buf, 0, r);
         } while (r != -1);
-
         return bos.toByteArray();
     }
 }

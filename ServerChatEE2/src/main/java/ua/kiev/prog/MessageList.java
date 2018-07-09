@@ -96,7 +96,7 @@ public class MessageList {
         Set<User> userSet=userMap.keySet();
 
         for (User us: userSet) {
-            System.out.println(us.hashCode()==userHashCode);
+//            System.out.println(us.hashCode()==userHashCode);
             if(us.hashCode()==userHashCode){
                 us.setOnline(isOnline);
             }
@@ -122,8 +122,9 @@ public class MessageList {
     }
 
     public synchronized void removeFromChatRoom(String roomName, List<User> users){
-
+        System.out.println(roomName+" from remove user!!!!!!!!!!!!!");
         if(chatRoomMap.containsKey(roomName)){
+            System.out.println(roomName+" from remove user!!!!!!!!!!!!!");
             chatRoomMap.get(roomName).removeAll(users);
         }
 
@@ -133,9 +134,11 @@ public class MessageList {
         List<ChatRoom> chatRoomList=new ArrayList<>();
         Set<String> keySet=chatRoomMap.keySet();
         for (String roomName: keySet) {
-            List<Set<User>>
-            chatRoomList.add(new ChatRoom(roomName,chatRoomMap.get(roomName)))
+            List<User> temp=new ArrayList<>(chatRoomMap.get(roomName));
+            chatRoomList.add(new ChatRoom(roomName,temp));
         }
+
+        return chatRoomList;
     }
 
 }

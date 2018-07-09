@@ -20,21 +20,14 @@ public class AddUser extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         if (req.getHeader("addUser").equals("true")) {
-
             byte[] buf = requestBodyToArray(req);
             String bufStr = new String(buf, StandardCharsets.UTF_8);
-
             User us = User.fromJSON(bufStr);
 
-
-
             if (us != null) {
-
                     msgList.addPrivateMess(us);
                     resp.setStatus(HttpServletResponse.SC_OK);
                     return;
-
-
             } else {
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             }
@@ -43,9 +36,7 @@ public class AddUser extends HttpServlet {
             byte[] buf = requestBodyToArray(req);
             String bufStr = new String(buf, StandardCharsets.UTF_8);
             User us = User.fromJSON(bufStr);
-
             if ((us != null & !msgList.getUserMap().isEmpty()) && msgList.getUserMap().containsKey(us)) {
-
                 resp.setStatus(HttpServletResponse.SC_OK);
                 return;
             } else {
@@ -58,11 +49,8 @@ public class AddUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Gson gson = new GsonBuilder().create();
-
         resp.setContentType("application/json");
-
         String json = gson.toJson(msgList.getUserList());
-
 
        try(OutputStream os = resp.getOutputStream()) {
            byte[] buf = json.getBytes(StandardCharsets.UTF_8);

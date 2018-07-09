@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7aeb602-2d5f-4aa6-8d4a-937deaa6bd9b" name="Default" comment="" />
+    <list default="true" id="2680ac45-6afb-410c-99d3-84151d584270" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,29 +25,41 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="apartment@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="apartment@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="apartment@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="apartment: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="testclasswork@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBProbe.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/DBProbe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dd8ef2c8-1c6d-47d7-af9b-6f9671a05f62/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,12 +67,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/pom.xml" />
-        <option value="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/DataBaseModel.java" />
-        <option value="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/Apartment.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b23964ae-561e-4e75-b836-7361fea10037/console.sql" />
-        <option value="$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/DataModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/DBProbe.java" />
       </list>
     </option>
   </component>
@@ -77,17 +85,6 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Lecture6HomeWorkFlatBase Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -102,48 +99,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lecture6ClassWork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lecture6ClassWork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lecture6ClassWork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lecture6ClassWork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stepan1983" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lecture6HomeWorkFlatBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lecture6HomeWorkFlatBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lecture6ClassWork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lecture6ClassWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -155,14 +148,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaPro3/JavaPro2/Advertasement" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,54 +215,52 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7aeb602-2d5f-4aa6-8d4a-937deaa6bd9b" name="Default" comment="" />
-      <created>1531115951259</created>
+      <changelist id="2680ac45-6afb-410c-99d3-84151d584270" name="Default" comment="" />
+      <created>1531152672227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531115951259</updated>
-      <workItem from="1531115955504" duration="1182000" />
-      <workItem from="1531142489912" duration="5241000" />
-      <workItem from="1531152525563" duration="29000" />
+      <updated>1531152672227</updated>
+      <workItem from="1531152675417" duration="404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6452000" />
+    <option name="totallyTimeSpent" value="404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.3286219" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32979977" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49727964" visible="true" weight="0.25617614" />
-      <window_info anchor="right" id="Database" order="6" weight="0.29371002" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973147" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.32975295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Web" order="6" sideWeight="0.50272036" side_tool="true" visible="true" weight="0.25266525" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297062" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297062" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,52 +269,31 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/webapp/index.jsp" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8647d073-224e-4468-82ed-f512631cf567/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/34e984fe-af0f-4668-be16-9faca49f0c30/console.sql" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/DataBaseModel.java" />
-    <entry file="das://b23964ae-561e-4e75-b836-7361fea10037/schema/apartment/table/apartments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b23964ae-561e-4e75-b836-7361fea10037/console.sql" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/Controler.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/sql/PreparedStatement.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state relative-caret-position="550">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/Apartment.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/sql/Connection.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dd8ef2c8-1c6d-47d7-af9b-6f9671a05f62/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/stepan1983/DBProbe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../JavaPro/Lecture6HomeWorkFlatBase/src/main/java/com/gmail/stepan1983/DataModel.java" />
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Lecture6HomeWorkFlatBase:war</last-edited>
+          <last-edited>Lecture6ClassWork:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -373,11 +341,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Lecture6HomeWorkFlatBase</last-edited>
+          <last-edited>Lecture6ClassWork</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.16551724" />
                 <option value="0.6" />
               </list>
             </option>
@@ -386,7 +354,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1</last-edited>
+          <last-edited>Maven: com.google.protobuf:protobuf-java:2.6.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

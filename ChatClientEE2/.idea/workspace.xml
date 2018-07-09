@@ -20,8 +20,26 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="3850">
               <caret line="283" selection-start-line="283" selection-end-line="283" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="446">
+              <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ChatRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+            <state relative-caret-position="329">
+              <caret line="268" column="54" selection-start-line="268" selection-start-column="54" selection-end-line="268" selection-end-column="54" />
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
               <folding>
                 <element signature="method#getUserList#0;class#Main#0" />
                 <element signature="method#sendPublicMessage#0;class#Main#0" />
@@ -29,6 +47,7 @@
                 <element signature="method#velcomeMenu#0;class#Main#0" />
                 <element signature="method#getChatRoomList#0;class#Main#0" />
               </folding>
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
             </state>
           </provider>
         </entry>
@@ -45,7 +64,11 @@
       <file leaf-file-name="GetThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="901">
+=======
             <state relative-caret-position="1166">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
               <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
             </state>
           </provider>
@@ -72,8 +95,18 @@
       <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Message.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="968">
               <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="731">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+=======
+            <state relative-caret-position="638">
+              <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
             </state>
           </provider>
         </entry>
@@ -168,9 +201,18 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+=======
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+=======
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,19 +379,42 @@
       <workItem from="1530812948560" duration="7859000" />
       <workItem from="1530855412559" duration="375000" />
       <workItem from="1530855878192" duration="16506000" />
+<<<<<<< HEAD
       <workItem from="1530898140546" duration="13482000" />
       <workItem from="1531151822327" duration="331000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1531115745491" duration="208000" />
+=======
+      <workItem from="1530898140546" duration="13065000" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="38553000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="24948000" />
+=======
+    <option name="totallyTimeSpent" value="37805000" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32979977" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -358,11 +423,27 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.45465252" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32979977" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26208377" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3264418" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32979977" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45465252" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32979977" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25832438" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -371,7 +452,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Web" order="2" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32979977" />
+=======
+      <window_info anchor="bottom" id="Messages" order="7" />
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -395,6 +480,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="5896">
           <caret line="268" column="54" selection-start-line="268" selection-start-column="54" selection-end-line="268" selection-end-column="54" />
           <folding>
@@ -444,6 +530,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="3162">
+          <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ChatRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
         <state relative-caret-position="4092">
           <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
           <folding>
@@ -453,40 +552,61 @@
             <element signature="method#velcomeMenu#0;class#Main#0" />
             <element signature="method#getChatRoomList#0;class#Main#0" />
           </folding>
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="34">
+=======
         <state relative-caret-position="44">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="901">
+=======
         <state relative-caret-position="1166">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
           <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JsonMessages.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+=======
         <state relative-caret-position="88">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/User.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="697">
+=======
         <state relative-caret-position="880">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
           <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Message.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="731">
+=======
         <state relative-caret-position="946">
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
         </state>
       </provider>
@@ -519,23 +639,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/GetThread.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="731">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+=======
         <state relative-caret-position="1166">
           <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ChatRoom.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/User.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1496">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="901">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+=======
+        <state relative-caret-position="638">
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
           <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Message.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="968">
           <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="340">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+        <state relative-caret-position="638">
+          <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+>>>>>>> 9763eb2318e670f1e065a2c07eb89d06fb738968
+>>>>>>> ef7cc349c17ef96e2a5b3e6dd82fe30a4a74c402
         </state>
       </provider>
     </entry>

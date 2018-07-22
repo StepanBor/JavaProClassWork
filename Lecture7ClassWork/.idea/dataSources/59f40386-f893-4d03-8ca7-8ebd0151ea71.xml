@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mydb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mydb">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="andretest"/>
+    <schema id="4" parent="1" name="bid"/>
+    <schema id="5" parent="1" name="bidvdb"/>
+    <schema id="6" parent="1" name="cat"/>
+    <schema id="7" parent="1" name="cdatatest"/>
+    <schema id="8" parent="1" name="chat"/>
+    <schema id="9" parent="1" name="chatserver"/>
+    <schema id="10" parent="1" name="coursecrm"/>
+    <schema id="11" parent="1" name="courses_testing"/>
+    <schema id="12" parent="1" name="dbmvc2"/>
+    <schema id="13" parent="1" name="demodb"/>
+    <schema id="14" parent="1" name="fire"/>
+    <schema id="15" parent="1" name="htest1"/>
+    <schema id="16" parent="1" name="information_schema"/>
+    <schema id="17" parent="1" name="mudb111"/>
+    <schema id="18" parent="1" name="mule"/>
+    <schema id="19" parent="1" name="mydb000"/>
+    <schema id="20" parent="1" name="mydb7"/>
+    <schema id="21" parent="1" name="mydb888"/>
+    <schema id="22" parent="1" name="mydb9"/>
+    <schema id="23" parent="1" name="mydb999"/>
+    <schema id="24" parent="1" name="mydb9999"/>
+    <schema id="25" parent="1" name="mysq"/>
+    <schema id="26" parent="1" name="mysql"/>
+    <schema id="27" parent="1" name="performance_schema"/>
+    <schema id="28" parent="1" name="prog"/>
+    <schema id="29" parent="1" name="prog1"/>
+    <schema id="30" parent="1" name="progleads"/>
+    <schema id="31" parent="1" name="quakeglobal"/>
+    <schema id="32" parent="1" name="r1234"/>
+    <schema id="33" parent="1" name="sakila"/>
+    <schema id="34" parent="1" name="t999"/>
+    <schema id="35" parent="1" name="test"/>
+    <schema id="36" parent="1" name="test000"/>
+    <schema id="37" parent="1" name="test1"/>
+    <schema id="38" parent="1" name="test111"/>
+    <schema id="39" parent="1" name="test1234"/>
+    <schema id="40" parent="1" name="test777"/>
+    <schema id="41" parent="1" name="test888"/>
+    <schema id="42" parent="1" name="test8888"/>
+    <schema id="43" parent="1" name="test9988"/>
+    <schema id="44" parent="1" name="test999"/>
+    <schema id="45" parent="1" name="testany"/>
+    <schema id="46" parent="1" name="testdb2"/>
+    <schema id="47" parent="1" name="testdb4"/>
+    <schema id="48" parent="1" name="testproc"/>
+    <schema id="49" parent="1" name="testsec"/>
+    <schema id="50" parent="1" name="u888"/>
+    <schema id="51" parent="1" name="u999"/>
+    <schema id="52" parent="1" name="wp958"/>
+    <schema id="53" parent="1" name="xxx"/>
+    <schema id="54" parent="1" name="xxxx"/>
+    <schema id="55" parent="1" name="xxy"/>
+    <schema id="56" parent="1" name="xxyy"/>
+    <schema id="57" parent="1" name="xxyyuu"/>
+    <schema id="58" parent="1" name="xxyyz"/>
+    <schema id="59" parent="1" name="xxyyzz"/>
+    <schema id="60" parent="1" name="y222"/>
+    <schema id="61" parent="1" name="y777"/>
+    <schema id="62" parent="1" name="yyuu"/>
+    <schema id="63" parent="1" name="zxc"/>
+    <table id="64" parent="2" name="a1"/>
+    <table id="65" parent="2" name="a2"/>
+    <table id="66" parent="2" name="address"/>
+    <table id="67" parent="2" name="address1"/>
+    <table id="68" parent="2" name="address2"/>
+    <table id="69" parent="2" name="client"/>
+    <table id="70" parent="2" name="clients"/>
+    <table id="71" parent="2" name="clients1"/>
+    <table id="72" parent="2" name="clients2"/>
+    <table id="73" parent="2" name="hibernate_sequence"/>
+    <column id="74" parent="64" name="x">
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="75" parent="65" name="x">
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="76" parent="66" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="66" name="city">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="78" parent="66" name="country">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="79" parent="66" name="street">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="80" parent="66" name="client_id">
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="81" parent="66" name="FKfo9a2lduvue8lwvl9cilqsr96">
+      <ColNames>client_id</ColNames>
+    </index>
+    <key id="82" parent="66" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="83" parent="66" name="FKfo9a2lduvue8lwvl9cilqsr96">
+      <ColNames>client_id</ColNames>
+      <RefTableName>client</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="84" parent="67" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="67" name="city">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="86" parent="67" name="country">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="87" parent="67" name="street">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="88" parent="67" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="89" parent="68" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="68" name="city">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="91" parent="68" name="country">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="92" parent="68" name="street">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="93" parent="68" name="client_id">
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="94" parent="68" name="FK3dy93wl9ewcnrg6mhw8vfp9bt">
+      <ColNames>client_id</ColNames>
+    </index>
+    <key id="95" parent="68" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="96" parent="68" name="FK3dy93wl9ewcnrg6mhw8vfp9bt">
+      <ColNames>client_id</ColNames>
+      <RefTableName>clients2</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="97" parent="69" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="69" name="age">
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="99" parent="69" name="name">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="100" parent="69" name="address_id">
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="101" parent="69" name="FKl63rkjkd4rggxh14d9ydtei43">
+      <ColNames>address_id</ColNames>
+    </index>
+    <key id="102" parent="69" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="103" parent="69" name="FKl63rkjkd4rggxh14d9ydtei43">
+      <ColNames>address_id</ColNames>
+      <RefTableName>address</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="104" parent="70" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="70" name="age">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="70" name="user_name">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="107" parent="70" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="108" parent="71" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="71" name="age">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="71" name="user_name">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="111" parent="71" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="112" parent="72" name="id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="72" name="age">
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="114" parent="72" name="name">
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="115" parent="72" name="address_id">
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="116" parent="72" name="FKq56e3m5pkfx8fb3k22aqjnno1">
+      <ColNames>address_id</ColNames>
+    </index>
+    <key id="117" parent="72" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="118" parent="72" name="FKq56e3m5pkfx8fb3k22aqjnno1">
+      <ColNames>address_id</ColNames>
+      <RefTableName>address1</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="119" parent="73" name="next_val">
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

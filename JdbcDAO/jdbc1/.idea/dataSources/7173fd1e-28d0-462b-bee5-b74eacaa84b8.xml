@@ -1,0 +1,251 @@
+<dataSource name="MySQL - mydb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mydb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="andretest" />
+    <schema id="3" name="bid" />
+    <schema id="4" name="bidvdb" />
+    <schema id="5" name="cat" />
+    <schema id="6" name="cdatatest" />
+    <schema id="7" name="chat" />
+    <schema id="8" name="chatserver" />
+    <schema id="9" name="coursecrm" />
+    <schema id="10" name="courses_testing" />
+    <schema id="11" name="dbmvc2" />
+    <schema id="12" name="demodb" />
+    <schema id="13" name="fire" />
+    <schema id="14" name="htest1" />
+    <schema id="15" name="information_schema" />
+    <schema id="16" name="mudb111" />
+    <schema id="17" name="mule" />
+    <schema id="18" name="mydb000" />
+    <schema id="19" name="mydb7" />
+    <schema id="20" name="mydb888" />
+    <schema id="21" name="mydb9" />
+    <schema id="22" name="mydb999" />
+    <schema id="23" name="mydb9999" />
+    <schema id="24" name="mysq" />
+    <schema id="25" name="mysql" />
+    <schema id="26" name="performance_schema" />
+    <schema id="27" name="prog" />
+    <schema id="28" name="prog1" />
+    <schema id="29" name="progleads" />
+    <schema id="30" name="quakeglobal" />
+    <schema id="31" name="r1234" />
+    <schema id="32" name="sakila" />
+    <schema id="33" name="t999" />
+    <schema id="34" name="t9999" />
+    <schema id="35" name="t9999y" />
+    <schema id="36" name="test" />
+    <schema id="37" name="test000" />
+    <schema id="38" name="test1" />
+    <schema id="39" name="test111" />
+    <schema id="40" name="test1234" />
+    <schema id="41" name="test777" />
+    <schema id="42" name="test888" />
+    <schema id="43" name="test8888" />
+    <schema id="44" name="test9988" />
+    <schema id="45" name="test999" />
+    <schema id="46" name="testany" />
+    <schema id="47" name="testdb2" />
+    <schema id="48" name="testdb4" />
+    <schema id="49" name="testproc" />
+    <schema id="50" name="testsec" />
+    <schema id="51" name="u888" />
+    <schema id="52" name="u999" />
+    <schema id="53" name="wp958" />
+    <schema id="54" name="xxx" />
+    <schema id="55" name="xxxx" />
+    <schema id="56" name="xxy" />
+    <schema id="57" name="xxyy" />
+    <schema id="58" name="xxyyuu" />
+    <schema id="59" name="xxyyz" />
+    <schema id="60" name="xxyyzz" />
+    <schema id="61" name="y222" />
+    <schema id="62" name="y777" />
+    <schema id="63" name="yyuu" />
+    <schema id="64" name="zxc" />
+    <table id="65" parent="1" name="a1" />
+    <table id="66" parent="1" name="a2" />
+    <table id="67" parent="1" name="address" />
+    <table id="68" parent="1" name="address1" />
+    <table id="69" parent="1" name="address2" />
+    <table id="70" parent="1" name="client" />
+    <table id="71" parent="1" name="clients" />
+    <table id="72" parent="1" name="clients1" />
+    <table id="73" parent="1" name="clients2" />
+    <table id="74" parent="1" name="hibernate_sequence" />
+    <column id="75" parent="65" name="x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="76" parent="66" name="x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="77" parent="67" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="78" parent="67" name="city">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="79" parent="67" name="country">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="80" parent="67" name="street">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="81" parent="67" name="client_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <index id="82" parent="67" name="FKfo9a2lduvue8lwvl9cilqsr96">
+      <columns>client_id</columns>
+      <desc-columns />
+    </index>
+    <key id="83" parent="67" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="84" parent="67" name="FKfo9a2lduvue8lwvl9cilqsr96">
+      <columns>client_id</columns>
+      <ref-key>~.client.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="85" parent="68" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="86" parent="68" name="city">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="87" parent="68" name="country">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="88" parent="68" name="street">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="89" parent="68" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="90" parent="69" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="91" parent="69" name="city">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="92" parent="69" name="country">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="93" parent="69" name="street">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="94" parent="69" name="client_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <index id="95" parent="69" name="FK3dy93wl9ewcnrg6mhw8vfp9bt">
+      <columns>client_id</columns>
+      <desc-columns />
+    </index>
+    <key id="96" parent="69" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="97" parent="69" name="FK3dy93wl9ewcnrg6mhw8vfp9bt">
+      <columns>client_id</columns>
+      <ref-key>~.clients2.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="98" parent="70" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="99" parent="70" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="100" parent="70" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="101" parent="70" name="address_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <index id="102" parent="70" name="FKl63rkjkd4rggxh14d9ydtei43">
+      <columns>address_id</columns>
+      <desc-columns />
+    </index>
+    <key id="103" parent="70" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="104" parent="70" name="FKl63rkjkd4rggxh14d9ydtei43">
+      <columns>address_id</columns>
+      <ref-key>~.address.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="105" parent="71" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="106" parent="71" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="107" parent="71" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="108" parent="71" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="109" parent="72" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="110" parent="72" name="age">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="111" parent="72" name="user_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="112" parent="72" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="113" parent="73" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="114" parent="73" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="115" parent="73" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="116" parent="73" name="address_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <index id="117" parent="73" name="FKq56e3m5pkfx8fb3k22aqjnno1">
+      <columns>address_id</columns>
+      <desc-columns />
+    </index>
+    <key id="118" parent="73" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="119" parent="73" name="FKq56e3m5pkfx8fb3k22aqjnno1">
+      <columns>address_id</columns>
+      <ref-key>~.address1.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="120" parent="74" name="next_val">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>

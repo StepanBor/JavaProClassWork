@@ -22,33 +22,37 @@
         <input type="submit"/>
     </form>
 </div>
-
+<form action="/delete/img" method="POST">
 <table border="1">
-    <caption>Adres list</caption>
+    <caption>Images</caption>
     <tr>
+        <th>preview</th>
         <th>id</th>
+        <th>delete?</th>
 
     </tr>
     <c:if test="${requestScope.photos!=null}">
 
         <c:forEach var="entry" items="${requestScope.photos}">
-            <form>
+
 
                 <tr>
 
-                    <td><img src="/photo/<c:out value="${entry.key}"></c:out>" width="189" height="189"> alt="photo">
+                    <td><img src="/photo/<c:out value="${entry.key}"></c:out>" width="125" height="125">
                     </td>
                     <td><a href="/photo/<c:out value="${entry.key}"></c:out>"><c:out value="${entry.key}"></c:out></a>
                     </td>
-                    <td><a href="/delete/<c:out value="${entry.key}"></c:out>">delete</a></td>
-
+                    <%--<td><a href="/delete/<c:out value="${entry.key}"></c:out>">delete</a></td>--%>
+                    <td><input name="delete[]" type="checkbox" value="<c:out value="${entry.key}"></c:out>" > Delete </td>
 
                 </tr>
 
-            </form>
+
         </c:forEach>
     </c:if>
 </table>
+    <input type="submit">
+</form>
 <br>
 
 </body>

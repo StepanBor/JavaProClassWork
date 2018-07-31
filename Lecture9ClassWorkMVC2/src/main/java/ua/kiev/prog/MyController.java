@@ -20,8 +20,9 @@ public class MyController {
     private Map<Long, byte[]> photos = new HashMap<Long, byte[]>();
 
     @RequestMapping("/")
-    public String onIndex() {
-        return "index";
+    public String onIndex(Model model) {
+        model.addAttribute("photos", photos);
+        return "index2";
     }
 
     @RequestMapping(value = "/add_photo", method = RequestMethod.POST)
@@ -51,11 +52,24 @@ public class MyController {
     }
 
     @RequestMapping("/delete/{photo_id}")
-    public String onDelete(@PathVariable("photo_id") long id) {
+    public String onDelete(@PathVariable("photo_id") long id, Model model) {
         if (photos.remove(id) == null)
             throw new PhotoNotFoundException();
         else
-            return "index";
+            model.addAttribute("photos", photos);
+        return "index2";
+    }
+
+    @RequestMapping("/delete/img")
+    public String onDelete2(@RequestParam("delete[]") long[] id, Model model) {
+
+
+        for (long l : id) {
+            if (photos.remove(l) == null)
+                throw new PhotoNotFoundException();
+        }
+        model.addAttribute("photos", photos);
+        return "index2";
     }
 
     private ResponseEntity<byte[]> photoById(long id) {
@@ -71,9 +85,9 @@ public class MyController {
 
     @RequestMapping("/photo/list")
     public String getListFoto(Model model) {
-        
-        model.addAttribute("photos",photos);
-        
+
+        model.addAttribute("photos", photos);
+
         return "index2";
     }
 }

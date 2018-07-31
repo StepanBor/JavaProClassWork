@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lecture9ClassWorkMVC2" />
-        <module name="spring2" />
       </profile>
     </annotationProcessing>
   </component>

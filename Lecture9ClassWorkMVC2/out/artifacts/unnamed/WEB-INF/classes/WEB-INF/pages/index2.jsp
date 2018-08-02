@@ -22,6 +22,7 @@
         <input type="submit"/>
     </form>
 </div>
+<h2>Photos</h2>
 <form action="/delete/img" method="POST">
 <table border="1">
     <caption>Images</caption>

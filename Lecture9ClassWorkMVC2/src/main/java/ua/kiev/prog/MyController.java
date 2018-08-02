@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/")
 public class MyController {
 
-    private Map<Long, byte[]> photos = new HashMap<Long, byte[]>();
+    private Map<Long, byte[]> photos = new HashMap();
 
     @RequestMapping("/")
     public String onIndex(Model model) {
@@ -35,6 +35,7 @@ public class MyController {
             photos.put(id, photo.getBytes());
 
             model.addAttribute("photo_id", id);
+            model.addAttribute("photos", photos);
             return "result";
         } catch (IOException e) {
             throw new PhotoErrorException();
@@ -62,7 +63,6 @@ public class MyController {
 
     @RequestMapping("/delete/img")
     public String onDelete2(@RequestParam("delete[]") long[] id, Model model) {
-
 
         for (long l : id) {
             if (photos.remove(l) == null)

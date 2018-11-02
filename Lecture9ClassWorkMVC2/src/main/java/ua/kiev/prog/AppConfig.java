@@ -20,6 +20,8 @@ public class AppConfig {
         resolver.setViewClass(JstlView.class);
         resolver.setOrder(1);
         return resolver;
+        long=0;
+
     }
 
     @Bean
